@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gennilyn Panizares</title>
+    <link rel="stylesheet" href="style.css">
+ <!-- Insert this script at the bottom of the HTML, but before you use any Firebase services -->
+ <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js'
+
+    // If you enabled Analytics in your project, add the Firebase SDK for Google Analytics
+    import { getAnalytics } from 'https://www.gstatic.com/firebasejs/10.13.2/firebase-analytics.js'
+
+    // Add Firebase products that you want to use
+    import { getAuth } from 'https://www.gstatic.com/firebasejs/10.13.2/firebase-auth.js'
+    import { getFirestore } from 'https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore.js'
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+
+</head>
+<body>
+    <h3>ICCT COLLEGES EVENTS</h3>
+    <div class="box">
+        <div class="form">
+            <form id="StudentForm" autocomplete="off">
+                <h2>Enter Student Information</h2>
+                <div class="inputbox">
+                    <input type="text" id="FullName" placeholder="Full Name" required autocomplete="off">
+                </div>
+                <div class="inputbox">   
+                    <input type="text" id="StudentNumber" placeholder="Student ID Number" required autocomplete="off">
+                </div>
+                <div class="inputbox">
+                    <input type="text" id="Campus" placeholder="Campus" required autocomplete="off">
+                </div>
+                <div class="inputbox">
+                    <input type="text" id="Section" placeholder="Section" required autocomplete="off">
+                </div>
+                <div class="button-container">
+                    <button type="submit" class="submit" id="submit">SUBMIT</button>
+                    <button id="downloadAllBtn" class="download-btn">XLSX</button>
+                    <!-- <button id="downloadAllBtn" class="download-btn">XLSX</button> -->
+                </div>
+            </form>
+            
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+
+    <script type="module" src="index.js"></script>
+
+
+</body>
+</html>
