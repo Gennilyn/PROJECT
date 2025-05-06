@@ -11,7 +11,7 @@ body {
     align-items: center;
     min-height: 100vh;
     backdrop-filter: blur(5px);
-    background: url(bg.jpg);
+    background: url(save.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
